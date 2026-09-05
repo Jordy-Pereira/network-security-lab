@@ -32,7 +32,7 @@ interface gigabitethernet0/1.10
 
 ## DHCP
 
-I need user pools for the corporate and wireless VLANs.
+I needed user pools for the corporate and wireless VLANs.
 
 **Corporate pool**
 
@@ -67,7 +67,7 @@ DNS queries cross VLANs without a relay because they are unicast — the client 
 
 ## NTP and Syslog
 
-I need to collect router and switch logs on the server through Syslog. However, I first have to activate NTP, so the log entries carry a correct timestamp.
+I needed to collect router and switch logs on the server through Syslog. However, I first have to activate NTP, so the log entries carry a correct timestamp.
 
 A layer 2 switch forwards frames without needing an IP address. But when it has to originate traffic itself — querying NTP or sending logs to Syslog — it needs its own identity. That identity lives on an **SVI** (Switched Virtual Interface), a logical interface bound to a VLAN.
 
@@ -151,7 +151,7 @@ aaa authentication login default group radius local
 
 The `local` keyword at the end is critical. Without it, an unreachable RADIUS server locks us out of the device permanently.
 
-![	RADIUS authentication on the switch](../evidence/radius-login.png)
+![RADIUS authentication on the switch](../evidence/radius-login.png)
 
 
 

@@ -109,7 +109,7 @@ in the binding table.
 |---|---|---|---|---|
 | 1 | Rogue DHCP server | Corporate, Wireless | DHCP snooping, trusted uplink | Not applied to the Servers VLAN |
 | 2 | ARP poisoning | Corporate, Wireless | Dynamic ARP Inspection | Depends on the snooping binding table; static hosts need manual entries |
-| 3 | Unauthorized device on access port | Corporate, Servers, OT | Port security, sticky MAC | MAC addresses can be spoofed |
+| 3 | Unauthorized device on access port | Corporate, Servers | Port security, sticky MAC | MAC addresses can be spoofed |
 | 4 | Lateral movement IT → OT | OT | ACLs 101–103 on R1, ACL 105 on R2 | Stateless, no session tracking |
 | 5 | Compromised web server pivots inward | All | ACL 104 blocks DMZ → internal | DNS, NTP and Syslog to the server remain open |
 | 6 | Shared wireless key | Wireless | WPA2-PSK with AES | Key cannot be revoked per user; WPA2-Enterprise not supported in Packet Tracer |
